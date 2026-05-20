@@ -17,8 +17,15 @@
 <body class="light-theme">
     <header>
         <div class="container">
-            <h1>AI Coding Prompts</h1>
+            <h1 id="site-title">AI Coding Prompts</h1>
             <div class="header-actions">
+                <select id="language-select" class="lang-select" aria-label="Select Language">
+                    <option value="en">English</option>
+                    <option value="ur">اردو (Urdu)</option>
+                    <option value="hi">हिन्दी (Hindi)</option>
+                    <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+                    <option value="sd">سنڌي (Sindhi)</option>
+                </select>
                 <button id="share-site-btn" class="icon-btn" title="Share Website">
                     <span class="icon">🔗</span>
                 </button>
@@ -29,9 +36,9 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container">
         <section class="web-search-section">
-            <h2 class="section-title">AI Web Search</h2>
+            <h2 id="web-search-title" class="section-title">AI Web Search</h2>
             <div class="web-search-wrapper">
                 <span class="search-icon">🌐</span>
                 <input type="text" id="web-search-input" placeholder="Ask anything... (e.g., 'What is React?')" aria-label="Search the web">

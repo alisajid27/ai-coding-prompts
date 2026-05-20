@@ -64,6 +64,43 @@ header .container {
 .header-actions {
     display: flex;
     gap: 10px;
+    align-items: center;
+}
+
+.lang-select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+}
+
+/* RTL Support */
+body.rtl {
+    direction: rtl;
+}
+
+body.rtl .search-icon {
+    left: auto;
+    right: 15px;
+}
+
+body.rtl #search-input,
+body.rtl #web-search-input {
+    padding-left: 20px;
+    padding-right: 45px;
+}
+
+body.rtl .web-search-wrapper .search-icon {
+    left: auto;
+    right: 20px;
+}
+
+body.rtl .prompt-card {
+    text-align: right;
 }
 
 .icon-btn {

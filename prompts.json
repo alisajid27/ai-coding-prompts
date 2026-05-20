@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Agentic Feature Implementation",
+    "category": "Web Development",
+    "description": "A comprehensive prompt for planning and implementing new features using the RCTFE framework.",
+    "content": "Act as a Senior Full-Stack Engineer. We are adding [Feature Name] to our [Framework] app. \n\nContext: [Paste relevant file paths or architecture summary]. \n\nTask: \n1. Create a step-by-step implementation plan.\n2. Generate the code changes as a unified diff.\n3. Write unit and integration tests covering happy paths and edge cases.\n4. Provide a verification checklist for the PR.\n\nConstraints: No new external dependencies; follow the existing [Style Guide] patterns."
+  },
+  {
+    "id": 2,
+    "title": "Deep-Logic Debugging (Chain-of-Thought)",
+    "category": "Debugging",
+    "description": "Solve complex race conditions or memory leaks with systematic reasoning.",
+    "content": "Act as a Systems Debugging Expert. I am seeing [Error/Behavior] in [Language]. \n\nContext: [Paste Code + Stack Trace + Logs].\n\nTask: Before writing any code, walk me through a Chain-of-Thought analysis. List every possible state transition that could lead to this failure. Once the root cause is identified, provide a minimal fix and a regression test that would have caught this."
+  },
+  {
+    "id": 3,
+    "title": "Security & Compliance Auditor",
+    "category": "Security",
+    "description": "Review PRs for injection risks, data exposure, and access control issues.",
+    "content": "Act as a Senior AppSec Engineer specializing in OWASP Top 10 (2025 edition). Review the following PR diff for:\n1. Injection risks (SQL, NoSQL, Command).\n2. Insecure data exposure of PII.\n3. Broken access control.\n\nFormat: Return a table with: Severity (Critical/High/Med/Low), Location, Risk Description, and Remediation Code."
+  },
+  {
+    "id": 4,
+    "title": "Incremental Refactoring",
+    "category": "Refactoring",
+    "description": "Migrate legacy code safely using the 'Safe-Move' pattern.",
+    "content": "Act as a Refactoring Specialist. I want to migrate [Module A] from [Old Pattern] to [New Pattern]. \n\nTask: Create a 3-phase incremental plan that:\n1. Maintains backward compatibility at each step.\n2. Includes 'characterization tests' to ensure behavior parity.\n3. Provides a rollback strategy for each phase.\n\nOutput: A markdown roadmap with specific PR boundaries."
+  },
+  {
+    "id": 5,
+    "title": "Tree-of-Thoughts Architecture Planning",
+    "category": "Architecture",
+    "description": "Evaluate multiple architectural approaches before implementation.",
+    "content": "Explore three different architectural approaches for [Problem] (e.g., [Approach A] vs. [Approach B] vs. [Approach C]). Evaluate the trade-offs for our specific [Requirement, e.g., latency/cost] requirements, and then implement the winner."
+  },
+  {
+    "id": 6,
+    "title": "Verification Loop (Skeptical Reviewer)",
+    "category": "Testing",
+    "description": "Challenge AI-generated code to find edge cases and concurrency bugs.",
+    "content": "Now, act as a skeptical code reviewer and find three reasons why the code you just wrote might fail in a high-concurrency environment. Suggest fixes for each."
+  }
+]

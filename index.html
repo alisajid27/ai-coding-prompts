@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Coding Prompts - Boost Your Productivity</title>
+    
+    <!-- Social Media Meta Tags (Shareability) -->
+    <meta name="description" content="Free collection of advanced AI coding prompts for developers. Boost your productivity with our AI Search and copy-paste ready prompts.">
+    <meta property="og:title" content="AI Coding Prompts & Search">
+    <meta property="og:description" content="The ultimate toolkit for developers to master AI prompting.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <header>
+        <div class="container">
+            <h1>AI Coding Prompts</h1>
+            <div class="header-actions">
+                <button id="share-site-btn" class="icon-btn" title="Share Website">
+                    <span class="icon">🔗</span>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle Dark Mode" class="icon-btn">
+                    <span class="icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="web-search-section">
+            <h2 class="section-title">AI Web Search</h2>
+            <div class="web-search-wrapper">
+                <span class="search-icon">🌐</span>
+                <input type="text" id="web-search-input" placeholder="Ask anything... (e.g., 'What is React?')" aria-label="Search the web">
+                <button id="web-search-btn" class="web-search-btn">Ask AI</button>
+            </div>
+            
+            <div id="search-results-container" class="search-results-container hidden">
+                <div class="results-header">
+                    <span class="results-label">AI Response</span>
+                    <button id="close-results" class="close-btn">&times;</button>
+                </div>
+                <div id="search-status" class="search-status"></div>
+                <div id="search-content" class="search-content"></div>
+                <div id="search-links" class="search-links"></div>
+            </div>
+        </section>
+
+        <section class="controls">
+            <h2 class="section-title">Browse AI Prompts</h2>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="Search prompts..." aria-label="Search prompts">
+                </div>
+                <button id="search-button" class="search-btn">Search</button>
+            </div>
+            <div id="category-filters" class="filters">
+                <button class="filter-chip active" data-category="all">All</button>
+                <!-- Category chips will be injected here -->
+            </div>
+        </section>
+
+        <section id="prompts-grid" class="prompts-grid">
+            <!-- Prompt cards will be injected here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AI Coding Prompts. Built for developers.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
